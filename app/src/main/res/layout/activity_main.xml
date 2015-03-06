@@ -4,63 +4,48 @@
     android:layout_height="match_parent"
     android:background="#fff"
     android:orientation="vertical"
-    android:padding="20dp" >
-
-    <LinearLayout
-        android:id="@+id/group1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <com.zcw.togglebutton.ToggleButton
-            android:layout_width="54dp"
-            android:layout_height="30dp" >
-        </com.zcw.togglebutton.ToggleButton>
-
-        <com.zcw.togglebutton.ToggleButton
-            android:layout_marginLeft="20dp"
-            android:layout_width="54dp"
-            android:layout_height="30dp" >
-        </com.zcw.togglebutton.ToggleButton>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <com.zcw.togglebutton.ToggleButton
-            android:layout_width="54dp"
-            toggle:onColor="#f00"
-            toggle:offColor="#ddd"
-            toggle:spotColor="#00f"
-            toggle:offBorderColor="#000"
-            toggle:borderWidth="2dp"
-            android:layout_height="30dp" >
-        </com.zcw.togglebutton.ToggleButton>
-
-        <com.zcw.togglebutton.ToggleButton
-            android:layout_marginLeft="20dp"
-            android:layout_width="54dp"
-            toggle:onColor="#f00"
-            toggle:offColor="#ddd"
-            toggle:spotColor="#00f"
-            toggle:offBorderColor="#000"
-            toggle:borderWidth="2dp"
-            android:layout_height="30dp" >
-        </com.zcw.togglebutton.ToggleButton>
-    </LinearLayout>
+    android:padding="20dp">
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="只是单纯的开关,有边框颜色变化\n背景颜色变化顺序为:绿,蓝色,边框绿色,内部黑色" />
 
     <com.zcw.togglebutton.ToggleButton
         android:layout_width="70dp"
         android:layout_height="30dp"
-        android:layout_marginTop="10dp" />
+        toggle:borderWidth="2dp"
+        toggle:offBorderColor="#009900"
+        toggle:offColor="#000000"
+        toggle:onColor="#000099"
+        toggle:spotColor="#990000"></com.zcw.togglebutton.ToggleButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="只是单纯的开关,背景颜色无变化,一直红色" />
 
     <com.zcw.togglebutton.ToggleButton
-        android:layout_width="90dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp" />
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        toggle:borderWidth="2dp"
+        toggle:offBorderColor="#990000"
+        toggle:offColor="#990000"
+        toggle:onColor="#990000"
+        toggle:spotColor="#FFFFFF"></com.zcw.togglebutton.ToggleButton>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="只是单纯的开关,背景颜色有变化,边框颜色无变化\n背景颜色变化顺序为:绿,红" />
+
+    <com.zcw.togglebutton.ToggleButton
+        android:layout_width="70dp"
+        android:layout_height="30dp" />
 
 
 </LinearLayout>

@@ -29,13 +29,13 @@ public class ToggleButton extends View{
 	/** */
 	private float radius;
 	/** 开启颜色*/
-	private int onColor = Color.parseColor("#4ebb7f");
+	private int onColor = Color.parseColor("#990000"); // 红色
 	/** 关闭颜色*/
-	private int offBorderColor = Color.parseColor("#dadbda");
+	private int offBorderColor = Color.parseColor("#009900"); // 绿色
 	/** 灰色带颜色*/
-	private int offColor = Color.parseColor("#ffffff");
+	private int offColor = Color.parseColor("#009900"); // 蓝色
 	/** 手柄颜色*/
-	private int spotColor = Color.parseColor("#ffffff");
+	private int spotColor = Color.parseColor("#ffffff"); // 白色
 	/** 边框颜色*/
 	private int borderColor = offBorderColor;
 	/** 画笔*/
