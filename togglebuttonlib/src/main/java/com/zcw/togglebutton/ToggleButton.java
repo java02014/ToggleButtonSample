@@ -303,6 +303,13 @@ public class ToggleButton extends View{
 		public void onToggle(boolean on);
 	}
 
+    /**
+     * 获取当前状态
+     * @return true:开,false:关
+     */
+    public boolean getToggleButtonFlag() {
+        return toggleOn;
+    }
 
 	public void setOnToggleChanged(OnToggleChanged onToggleChanged) {
 		listener = onToggleChanged;
